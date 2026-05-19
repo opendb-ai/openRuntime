@@ -9,6 +9,20 @@ The project is aimed at developers and teams who want the ergonomics of an agent
 manager without handing their workspace, credentials, or execution environment to a
 remote runtime.
 
+## GitHub About
+
+Use this repository description:
+
+```text
+Local-first control plane for running, supervising, reviewing, and merging coding agent work across Codex, Claude Code, and shell runners.
+```
+
+Suggested topics:
+
+```text
+ai-agents, coding-agents, codex, claude-code, local-first, developer-tools, rust, nextjs, sqlite, git-worktree, task-runner, agent-runtime
+```
+
 ## Why it exists
 
 Modern coding agents are powerful, but the workflow around them is still rough:
@@ -25,8 +39,8 @@ runtime layer around them.
 ![openRuntime workflow demo](docs/assets/openruntime-demo.gif)
 
 The demo above was captured from real local runs against a temporary git
-workspace. It includes live discovery of the local Codex and Claude Code session
-stores, a shell policy-boundary task dispatched through the GUI, isolated git
+workspace. It shows the refreshed GUI, local Codex and Claude Code session
+inventory, a shell task dispatched through the control plane, isolated git
 worktrees, streamed timeline events, diff-first review, and a reviewed worktree
 merged and cleaned up from the UI.
 
@@ -34,7 +48,7 @@ merged and cleaned up from the UI.
 | --- | --- |
 | ![Dispatch workspace and runner state](docs/assets/openruntime-dispatch.png) | ![Running task with streamed events](docs/assets/openruntime-running.png) |
 
-| Local Codex and Claude Code session inventory | Diff-first review |
+| Local agent history | Diff-first review |
 | --- | --- |
 | ![Local Codex and Claude Code session inventory](docs/assets/openruntime-real-agents.png) | ![Diff review surface](docs/assets/openruntime-review.png) |
 
